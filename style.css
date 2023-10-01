@@ -90,11 +90,11 @@ section {
 }
 .home h1 {
   font-size: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 .home p {
   font-size: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .home a {
   font-size: 1.7rem;
@@ -147,25 +147,82 @@ section {
 .btn-box .btn:hover::before {
   width: 100%;
 }
+.clinica {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9%;
+  width: 100%;
+}
+.clinica .clinica-content h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.clinica .clinica-content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.clinica .clinica-content li {
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.farmacia {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9%;
+  width: 100%;
+  text-align: center;
+}
+.farmacia .farmacia-content h1 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+.farmacia .farmacia-content img {
+  margin: 4rem auto;
+}
+.farmacia .farmacia-content p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.faq {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  padding: 0 9%;
+  width: 100%;
+  text-align: center;
+}
+.faq h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  grid-column: 1/-1;
+}
+.faq img {
+  margin: 0rem auto;
+}
+.faq-content {
+  justify-self: center;
+  align-self: center;
+}
+.faq dl {
+}
+.faq dt,
+.faq dd {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
-  /* .home-imgHover {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    background-color: transparent;
-    width: 30%;
-    height: 100%;
-    transition: 3s;
-  }
-  .home-imgHover:hover {
-    opacity: 80%;
-    background-color: var(--bg-color);
-  } */
 }
 @media (max-width: 991px) {
   .header {
@@ -238,7 +295,18 @@ section {
     padding: 10rem 4% 2rem;
     grid-template-columns: 1fr;
   }
-
+  .clinica {
+    padding: 10rem 4% 2rem;
+    grid-template-columns: 1fr;
+  }
+  .farmacia {
+    padding: 10rem 4% 2rem;
+    grid-template-columns: 1fr;
+  }
+  .duvidas {
+    padding: 10rem 4% 2rem;
+    grid-template-columns: 1fr;
+  }
   .home-content {
     max-width: 100%;
   }
